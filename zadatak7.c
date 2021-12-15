@@ -49,7 +49,7 @@ int main()
 	printf("4 - Print the content of the directory\n");
 	printf("5 - exit \n");
 
-	printf("Witch choice do you want");
+	printf("Which choice do you want");
 	scanf("%d", &choice);
 
 
@@ -102,7 +102,7 @@ int main()
 		printf("4 - Print the content of the directory\n");
 		printf("5 - exit \n");
 
-		printf("Witch choice do you want");
+		printf("Which choice do you want");
 		scanf("%d", &choice);
 
 	}
