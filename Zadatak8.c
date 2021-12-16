@@ -44,8 +44,9 @@ int main(int argc, char** argv)
 	printf("  2 - Print In Order\n");
 	printf("  3 - Print Pre Order\n");
 	printf("  4 - Print Post Order\n");
-	printf("  5 - Find Element\n");
-	printf("  6 - Delete Element\n");
+        printf("  5 - Print Level Order\n");
+	printf("  6 - Find Element\n");
+	printf("  7 - Delete Element\n");
 	printf("  0 - Exit\n");
 
 
@@ -71,7 +72,11 @@ int main(int argc, char** argv)
 		case 4:
 			PrintPostOrder(root);
 			break;
-		case 5:
+                case 5:
+                        PrintOrderLevel(root);
+                        break;
+          
+		case 6:
 			printf("Which element you want to find: ");
 			scanf("%d", &element);
 			temp = FindEl(element, root);
@@ -82,7 +87,7 @@ int main(int argc, char** argv)
 				printf("Element found!\n");
 			}
 			break;
-		case 6:
+		case 7:
 			printf("Which element you want to delete: ");
 			scanf("%d", &element);
 
@@ -99,8 +104,9 @@ int main(int argc, char** argv)
 		printf("  2 - Print In Order\n");
 		printf("  3 - Print Pre Order\n");
 		printf("  4 - Print Post Order\n");
-		printf("  5 - Find Element\n");
-		printf("  6 - Delete Element\n");
+                printf("  5 - Print Level Order\n");
+		printf("  6 - Find Element\n");
+		printf("  7 - Delete Element\n");
 		printf("  0 - Exit\n");
 
 
