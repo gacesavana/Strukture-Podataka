@@ -108,13 +108,13 @@ int ProcitajDatDrzava(listaposition p, char* dat)
 	while (!feof(file))
 	{
 		fscanf(file, " %s %s\n", ime_drzave, datoteka_drzava);
-		InsertSorted(p, ime_drzave, datoteka_drzava);
+		UnesiSortirano(p, ime_drzave, datoteka_drzava);
 	}
 
 	fclose(file);
 	return 0;
 }
-int InsertSorted(listaposition p, char* ime_drzave, char* datoteka_drzava)
+int UnesiSortirano(listaposition p, char* ime_drzave, char* datoteka_drzava)
 {
 	listaposition q = NULL;
 	char pom[MAX] = { 0 };
